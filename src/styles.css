@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-1:#126fd9;
+    --blue-2: #0e53a3;
+    --yellow-1: #e4f310 ;
+    --white:  #ffffff;
+    --grey-1:#bfbfbf;
+    --shadow-dark: #000000;
+    --shadow-light:#202020;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: sans-serif;
+    width:100%;
+    height: 100%;
+    background-image:url('../src/assets/weatherImages.jpg');
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 93px;
+
+}
+.container {
+   width: 400px;
+   background-color: var(--white); 
+   border-radius:20px;
+   box-shadow: 10px 10px 10px var(--shadow-dark);
+   padding:0;
+
+}
+.upper-data{
+    overflow:hidden;
+    background-image:url('./assets/winter.jpg');
+    background-size:100% 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.upper-data img {
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.weather-data{
+    color:black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.location {
+    color:white;
+    text-align:center;
+    font-size:20px;
+    font-weight:500;  
+}
+.temperature{
+    color:var(--white);
+    font-size:4em;
+    text-align:center;
+    font-weight:900;
+}
+.more-info-label {
+    color:rgb(8, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.more-info-container{
+    background-color: var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    row-gap: 17px;
+}
+.info-block{
+    display:flex;
+    width: 134px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    row-gap:10px;
+}
+.info-block-label{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.info-block span{
+    color:var(--white);
+    font-size:0.8em;   
+}
+.info-block-value {
+    color: var(--white);
+}
+.fa-temperature-low{
+    color:red;
+}
+.fa-temperature-high{
+    color:red;
+}
+.fa-sun{
+    color:#ffffff;
+}
+.fa-wind {
+    color:#ffffff;
+}
+.subContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:18px;
+}

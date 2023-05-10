@@ -1,0 +1,95 @@
+<div class="search">
+  <form #form="ngForm">
+    <input type="seach" #city placeholder="Enter cityName" name="city" class="form-control inputField"  (mouseleave)="searchCity(city.value)"> 
+  </form>
+</div>
+  <div class="container">
+  <div class="upper-data">
+      <div class="weather-data">
+        <div class="location" style="color:black">{{ weatherZoneData.name }}</div>
+        <h1>Temperature Details</h1>
+        <div class="temperature">{{ weatherZoneData.temp}}&#8451;</div>
+      </div>
+  </div>
+    <div class="lower-data">
+      <span class="more-info-label">
+        More Information
+      </span>
+      <div class="more-info-container">
+          <div class="info-block">
+                  <span>min</span>
+                  <i class='fas fa-temperature-low'></i>
+              <div class="info-block-value">{{weatherZoneData.min_temp}}</div>
+          </div>
+
+          <div class="info-block">
+                <span>max</span>
+                <i class='fas fa-temperature-high'></i>
+            <div class="info-block-value">{{weatherZoneData.max_temp}}</div>
+        </div>
+
+        <div class="info-block">
+              <span>humidity</span>
+              <i class='far fa-sun'></i>
+          <div class="info-block-value">{{weatherZoneData.humidity}}</div>
+      </div>
+
+      <div class="info-block">
+            <span>wind</span>
+            <i class='fas fa-wind'></i>
+        <div class="info-block-value">{{weatherZoneData.wind}}</div>
+    </div>
+      </div>
+    </div>
+</div>
+
+
+<!--
+  <div class="container">
+  <div class="upper-data">   
+    <img src="../assets/winter.jpg">
+      <div class="weather-data">
+        <div class="location" style="color:black">London</div>
+        <h1>Temperature Details</h1>
+        <div class="temperature">{{ 14.40 | number: '1.0-0'}}&#8451;</div>
+      </div>
+  </div>
+    <div class="lower-data">
+      <span class="more-info-label">
+        More Information
+      </span>
+      <div class="more-info-container">
+          <div class="info-block">
+              <div class="info-block-label">
+                  <span>min</span><br>
+                  <i class='fas fa-temperature-low'></i>
+              </div><br>
+              <div class="info-block-value">10</div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">
+                <span>max</span><br>
+                <i class='fas fa-temperature-high'></i>
+            </div><br>
+            <div class="info-block-value">20</div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+              <span>humidity</span><br>
+              <i class='far fa-sun'></i>
+          </div><br>
+          <div class="info-block-value">77%</div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+            <span>wind</span><br>
+            <i class='fas fa-wind'></i>
+        </div><br>
+        <div class="info-block-value">11km/hr</div>
+    </div>
+      </div>
+    </div>
+</div>-->
