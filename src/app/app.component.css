@@ -4,3 +4,13 @@
     background-color:rgba(0,0,0,0.3);
     border-radius: 3.25rem;
 }
+
+.weather-data span{
+    font-weight: 500;
+    font-size: 22px;
+}
+@media (max-width:450px){
+    .inputField{
+    width:170px;
+    }
+}
