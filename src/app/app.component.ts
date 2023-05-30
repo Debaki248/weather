@@ -17,11 +17,11 @@ export class AppComponent implements OnInit{
   }
   weatherZoneData: weatherData = {
     name:'Washington,D.C',
-    temp:'20',
-    min_temp:'5',
-    max_temp:'30',
-    humidity:'20',
-    wind:'40'
+    temp:20,
+    min_temp:5,
+    max_temp:30,
+    humidity:20,
+    wind:40
   }
   ngOnInit() {
     
